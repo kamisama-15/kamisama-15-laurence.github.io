@@ -1,0 +1,566 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior:smooth;
+    transition: 0.5s;
+}
+#nav-bar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #36454F;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.9);
+    z-index: 99;
+}
+#nav-bar span a{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 40px;
+    color: white;
+    text-decoration: none;
+}
+#nav-bar span a:hover{
+    cursor: pointer;
+}
+#nav-bar div{
+    width: 40%;
+    height: auto;
+}
+#nav-bar div ul{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+
+}
+#nav-bar div ul li{
+    list-style: none;
+    padding: 20px;
+}
+#nav-bar div ul li a{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+#nav-bar div ul li a::after{
+    content: "";
+    width: 0%;
+    margin: auto;
+    height: 3px;
+    display: block;
+    background-color:white ;
+    transition: 0.5s;
+}
+#nav-bar div ul li a:hover::after{
+    width: 100%;
+}
+#body{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#body .swiper {
+    width: 100%;
+    height: 90vh;
+}
+  #body .swiper .swiper-wrapper{
+    position: relative;
+}
+#body .swiper .swiper-wrapper h1,h2,p,.button-swiper{
+    position: absolute;
+    z-index: 2;
+}
+
+#body .swiper .swiper-wrapper h1{
+    top: 30%;
+    left: 35%;
+    font-size: 40px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+#body .swiper .swiper-wrapper  h2{
+    top: 40%;
+    left: 35%;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 700;
+    color:black;
+}
+#body .swiper .swiper-wrapper p{
+    top: 55%;
+    left: 42%;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+#body .swiper .swiper-wrapper .button-swiper{
+    top: 65%;
+    left: 45%;
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(236, 42, 8) ;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;
+    transition: 0.5s;
+    font-size: 20px;
+    color: rgb(236, 42, 8);
+}
+#body .swiper .swiper-wrapper .button-swiper:hover{
+    cursor: pointer;
+    background-color: rgb(236, 42, 8) ;
+    border: none;
+    color: #fff;
+}
+#body .swiper .swiper-wrapper .swiper-text2{
+    left: 32%;
+}
+
+#body  .swiper img{
+    height: fit-content;
+    width: 100%;
+}
+#body .swiper .swiper-button-next, .swiper .swiper-button-prev{
+   color: white;
+}
+#body .swiper .swiper-pagination-bullet-active{
+    background:white;
+}
+#about-us{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+}
+
+#about-us .about-us-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 10px 0px;
+
+}
+#about-us .about-us-header h1{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #36454F;
+}
+
+#about-us .about-us-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+
+#about-us .about-us-body div{
+    flex: 1;
+    margin:0px 20px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+  }
+#about-us .about-us-body div:hover{
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 7, 0.5);
+    border: none;
+  
+}
+
+#about-us .about-us-body div img{
+    width: 60%;
+    height:40vh ;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+#about-us .about-us-body div span{
+    padding: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+#gallery{
+    width: 100%;
+    height: 220vh;
+    display: flex;  
+    flex-direction: column;
+    padding-top: 90px;
+}
+
+#gallery .gallery-header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#gallery .gallery-header h1{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-size: 30px;
+    color: #36454F;
+}
+
+#gallery .gallery-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 160vh;
+}
+
+#gallery .gallery-body .first-row{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#gallery .gallery-body .first-row div{
+    flex:1;
+    height: 20vh;
+    border: 5px solid #36454F;
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+}
+#gallery .gallery-body .first-row div img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+#gallery .gallery-body .first-row div img:hover{
+    cursor: pointer;
+    transform:scale(1.3)rotate(1deg);
+}
+
+#gallery .gallery-body .second-row{
+    display: flex;
+    justify-content: space-between;   
+  }
+
+#gallery .gallery-body .second-row div{
+    flex:1;
+    height: 20vh;
+    border: 5px solid #36454F;
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+}
+#gallery .gallery-body .second-row div img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+
+}
+#gallery .gallery-body .second-row div img:hover{
+    cursor: pointer;
+    transform:scale(1.3)rotate(1deg);
+}
+#gallery .gallery-body .third-row{
+        display: flex;
+        justify-content: space-between;   
+}
+
+#gallery .gallery-body .third-row div{
+        flex:1;
+        height: 20vh;
+        border: 5px solid #36454F;
+        border-radius: 10px;
+        margin: 20px;
+        overflow: hidden;
+}
+#gallery .gallery-body .third-row div img{
+        height: 100%;
+        width: 100%;
+        transition: 0.5s
+}
+#gallery .gallery-body .third-row div img:hover{
+    cursor: pointer;
+    transform:scale(1.3)rotate(1deg);
+}
+#gallery .gallery-body .fourth-row{
+    display: flex;
+    justify-content: space-between;   
+}
+
+#gallery .gallery-body .fourth-row div{
+    flex:1;
+    height: 20vh;
+    margin: 20px;
+    overflow: hidden;
+    border: 5px solid #36454F;
+    border-radius: 10px;
+}
+#gallery .gallery-body .fourth-row div img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s
+}
+#gallery .gallery-body .fourth-row div img:hover{
+cursor: pointer;
+transform:scale(1.3)rotate(1deg);
+}
+#gallery .gallery-body .fifth-row{
+    display: flex;
+    justify-content: space-between;   
+}
+
+#gallery .gallery-body .fifth-row div{
+    flex:1;
+    height: 20vh;
+    margin: 20px;
+    overflow: hidden;
+    border: 5px solid #36454F;
+    border-radius: 10px;
+}
+#gallery .gallery-body .fifth-row div img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s
+}
+#gallery .gallery-body .fifth-row div img:hover{
+cursor: pointer;
+transform:scale(1.3)rotate(1deg);
+}
+#gallery .gallery-body .sixth-row{
+    display: flex;
+    justify-content: space-between;   
+}
+
+#gallery .gallery-body .sixth-row div{
+    flex:1;
+    height: 20vh;
+    margin: 20px;
+    overflow: hidden;
+    border: 5px solid #36454F;
+    border-radius: 10px;
+}
+#gallery .gallery-body .sixth-row div img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s
+}
+#gallery .gallery-body .sixth-row div img:hover{
+cursor: pointer;
+transform:scale(1.3)rotate(1deg);
+}
+#gallery .gallery-body .seventh-row{
+    display: flex;
+    justify-content: space-between;   
+}
+
+#gallery .gallery-body .seventh-row div{
+    flex:1;
+    height: 20vh;
+    margin: 20px;
+    overflow: hidden;
+    border: 5px solid #36454F;
+    border-radius: 10px;
+}
+#gallery .gallery-body .seventh-row div img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s
+}
+#gallery .gallery-body .seventh-row div img:hover{
+cursor: pointer;
+transform:scale(1.3)rotate(1deg);
+}
+#gallery .pop-up-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    display: none;
+
+}
+#gallery .pop-up-image div{
+    width: 70%;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    border: 5px solid #E1d9d1;
+    object-fit: cover;
+    transition: 0.5s;
+}
+#gallery .pop-up-image div img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+#gallery .pop-up-image span{
+    top: 0;
+    right: 20px;
+    color: white;
+    position: absolute;
+    font-size: 60px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 100;
+}
+#contact{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+}
+#contact .contact-header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .contact-header h1{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 600;
+    font-size: 35px;  
+    color: #36454F;
+}
+#contact .contact-email{
+    width: 100%;
+    height: 20vh;
+    padding: 20px 0px;
+    background-image: url('email-pic.jpg');
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#contact .contact-email input[type=email]{
+    width: 410px;
+    height: 30px;
+    display: block;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-left: 50px;
+}
+#contact .contact-email input[type=button]{
+    width: 60px;
+    height: 53px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+    transition: 0.5s;
+    border-left: none;
+}
+#contact .contact-email input[type=button]:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+#contact .contact-email span{
+    position: absolute;
+    top: 38%;
+    right:100px ;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #36454F;
+}
+#contact .contact-details{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+}
+#contact .contact-details .details{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height:40vh;
+    flex-direction: column;
+    
+}
+#contact .contact-details .details span{
+    padding-top: 8px;
+    padding-left: 100px;
+    font-family: sans-serif;
+}
+#contact .contact-details .details span:nth-child(1){
+    font-size: 25px;
+    color: #36454F;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;   
+}
+#contact .contact-details .social-media{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height:40vh;
+    flex-direction: column;
+    color: #36454F;
+}
+#contact .contact-details .social-media span{
+    padding-top: 8px;
+    text-align: left;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-size: 25px;
+}
+#contact .contact-details .social-media a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding-top: 3px;
+}
+#contact .contact-details .social-media a i{
+    padding: 0px 10px;
+    display: inline-block;
+    width: 20px;
+    padding-top: 3px;
+}
+footer{
+    width: 100%;
+    height: 25px;
+    background-color: FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0 ;
+}
+footer span{
+    font-family: sans-serif;
+    font-size: small;
+    color: #36454F;
+}
